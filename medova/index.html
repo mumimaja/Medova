@@ -7,22 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"/>
     <script src="https://kit.fontawesome.com/a05f739ef1.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
 
 
+<!------HEADER START ------------------------------------------------------------------------------------------------------------------------------------------------------>
 
+<!-- HEADER indeholder alle elementer på "første viewport" på hjemmesiden udover konkurrence teposen -->
 <header>
 
 
 <nav>
-
     <a href="index.html"><h1>MEDOVA</h1></a>
     
-<!-- Alle links i header udover logo får tag -->
-    <a class="header-link" href="#">Medova te</a>
+<!-- Alle links i header udover logo får dette tag så de kan få hover / af en eller anden årsag var 
+a:hover:not H1,  a p:hover, eller a:hover #logo:hover ( border-bottom:none ikke nok)-->
+    <a class="header-link" href="produktside.html">Medova te</a>
     <a class="header-link"href="#">Opskrifter</a>
     <a class="header-link"href="#">Arrangementer</a>
     <a class="header-link"href="#">Konkurrence</a>
@@ -30,7 +30,6 @@
 
 
 <!-- DROP DOWN BTN -->
-   <div class="header-link">
     <div class="dropdown">
             <p class="dropdownbtn">Om os</p>
     <div class="dropdown-content">
@@ -38,11 +37,7 @@
         <a href="#"> Om BKI</a>
     </div>
     </div>
-    </div>
 </nav>
-
-<!-- Disse er placeret i header for at kunne lave flex columme i style. -->
-
 
 
 <!-- Burger Menu starter her -->
@@ -50,15 +45,23 @@
     <a href="index.html"><h1 id="mobil-logo">MEDOVA</h1></a>  
     <a href="#"><i class="fa-solid fa-bars"></i></a>
 </div>
+
+
+
+<!--  Disse er lagt i header for at kunne lave flex-direction collume i style -->
+
 <p id="forside-overskrift">Medova er genopfrisket</p>
 
 <div id="herobillede">
 </div>
 
-
 </header>
+<!------HEADER SLUT ------------------------------------------------------------------------------------------------------------------------------------------------------>
 
 
+
+
+<!-- skal placeres meget specefikt, derfor er den taget ud af header og bruger position relative istedet -->
 
 <div id="konkurrence-tepose">
     <img src="img/konkurrence-tepose.png" alt="konkurrence-tepose">
@@ -66,9 +69,18 @@
 
 
 
+
+
+
+
+<!------MAIN CONTENT START ------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Sætter main tag omkring så man kan lave nummer som i header -->
+
 <main>
 
+<!--  bevidst indsat som img istedet for bauggrundimg da teksten ikke skal over billedet. -->
 <div id="forside-teposer">
+    <img src="img/forside-teposer.png" alt="forsøg">
 </div>
 
 
@@ -83,16 +95,20 @@
 </div>
 
 </main>
+<!------MAIN CONTENT SLUT ------------------------------------------------------------------------------------------------------------------------------------------------------>
 
 
 
 
 
-<!-- FOOTER---------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- FOOTER-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <footer>
 
     <div>
         <p class="footer-overskrift">Kontakt</p>
+        <!-- footerlinjer med ikoner bliver sat i div, så de kan flexes med space between -->
         <div class="footer-content">
         <i class="fa-regular fa-envelope"></i>
         <p>Medova@bki.dk</p>
@@ -124,10 +140,9 @@
         </div>
     </div>
 </footer>
-
-
-
+<!------FOOTER SLUT------------------------------------------------------------------------------------------------------------------------------------------------------>
 
 
 </body>
 </html>
+<!------HTML SLUT------------------------------------------------------------------------------------------------------------------------------------------------------>

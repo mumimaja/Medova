@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200&display=swap');
 
+
+/* -----Generelle regler--------------------------------------------------------------------------------------------------------------------------- */
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +12,9 @@
 }
 
 /* Bruger font Prompt fra googlefonts, da den er næsten identisk med Avenir Next */
-/* sætter højde i body og HTMl for at kunne definere højder i procenter */
+
+/* sætter højde i body og HTMl for at kunne definere højder i procenter*/
+
 body{ 
     background-color: #fff2e5;
     color: #002fb6;
@@ -42,6 +49,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
+    width: 100%;
 }
 
 #forside-overskrift {
@@ -86,6 +94,7 @@ font-size:60pt;
     padding: 10px;
     align-items: center;
     border-bottom: 2px solid #002fb6;
+    padding: 15px;
 }
 
 #burger i {
@@ -97,7 +106,7 @@ font-size:60pt;
     font-weight:900;
     font-size: 40pt;
     text-decoration:none;
-    color:blue;
+    color:#002fb6;
 }
 
 
@@ -140,8 +149,9 @@ font-size:60pt;
 
 
 
-/*--- MAIN CONTENT --------------------------------------------------------------------------------------------------------------------------------*/
-
+/*--- TE POSE-------------------------- --------------------------------------------------------------------------------------------------------------------------------*/
+/* Havde mange problemer med dette element da jeg gerne ville have det placeret præcist lidt over menulinje
+i højre side, derfor bruger jeg position. */
 
 #konkurrence-tepose{
 position: absolute;
@@ -150,35 +160,34 @@ left: 68%;
 }
 
 #konkurrence-tepose img{ 
-    width: 100%;
-    height: 400px;
+    height: 350px;
+    width:300px;
 }
 
-
-
+/*--- MAIN CONTENT-------------------------- --------------------------------------------------------------------------------------------------------------------------------*/
 
 
 main{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     height: 70%%; 
+     height: 105%; 
 }
 
-#forside-teposer{ 
-    background-image: url("img/forside-teposer.png");
-    height: 400px;
-}
+#forside-teposer img{ 
+    height: 100%;
+    width: 100%;}
+
 
 #main-forside-tekst{
      text-align: center;
      font-size:30pt;
-     margin-bottom: 5%;
+     margin: 5% 10% 20% 10%;
 }
 
 
 
-/* Footer */
+/*-----FOOTER ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{ 
     border-top: 2px solid #002fb6;
@@ -205,6 +214,12 @@ footer a{
 
 
 
+/* --BREAK POINTS--------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* --BREAK POINT 1050 PX-------------------------------------------------------------------------------------------------------------------------------- */
+
 @media screen and (max-width:1050px){
  /* viser burger menu */
  #burger {
@@ -214,20 +229,98 @@ footer a{
     align-items: center;
 }
 
-
+/* fjerner nav */
 nav{ 
     display:none;
 }
 
-
+/* Te-pose placeres og skaleres korrekt ift. burgermenulinjen. */
 #konkurrence-tepose{
-    align-items: right;
-    /* left: 60%; */
+    top:130px;
 }
+
 #konkurrence-tepose img{
     height: 250px;
-    width:80%;
+    width:200px;
+}
+
+}
+
+/* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:800px){
+#forside-overskrift {
+        font-size: 30pt;
+    }
+    
+header{
+        height:75%;
+    }
+    
+#herobillede{
+        height: 200px;
+    }
+
+
+/* Da skærmen bliver mindre, ændre vi højden */
+main{
+    height: 50%;
+}
+
+#main-forside-tekst{
+    font-size: 15pt;
+
 }
 
 
+/* Herefter gav det ikke mening at have te posen */
+
+#konkurrence-tepose{
+    display:none;
 }
+
+}
+
+
+
+
+
+
+/* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:500px){
+#burger a h1{ 
+font-size: 30pt;
+}
+#burger i{ 
+font-size: 20pt;
+}
+#forside-overskrift {
+    font-size: 18pt;
+    padding-top: 0%;
+}
+#main-forside-tekst{
+    font-size: 10pt;
+
+}
+/* Footer ændres til colummn */
+
+footer{ 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+    font-size: 8pt;
+}
+
+.footer-content{
+justify-content: center;
+}
+
+#herobillede{
+    height: 150px;
+}
+}
+
+
