@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://kit.fontawesome.com/a05f739ef1.js" crossorigin="anonymous"></script>
 
 
@@ -16,14 +15,22 @@
 
 
 <header>
-    <nav>
-    <a href="index.html"><h1 id="logo">MEDOVA</h1></a>
-    <a href="#">Medova te</a>
-    <a href="#">Opskrifter</a>
-    <a href="#">Arrangementer</a>
-    <a href="#">Konkurrence</a>
-   
-   <!-- DROP DOWN BTN -->
+
+
+<nav>
+
+    <a href="index.html"><h1>MEDOVA</h1></a>
+    
+<!-- Alle links i header udover logo får tag -->
+    <a class="header-link" href="#">Medova te</a>
+    <a class="header-link"href="#">Opskrifter</a>
+    <a class="header-link"href="#">Arrangementer</a>
+    <a class="header-link"href="#">Konkurrence</a>
+    
+
+
+<!-- DROP DOWN BTN -->
+   <div class="header-link">
     <div class="dropdown">
             <p class="dropdownbtn">Om os</p>
     <div class="dropdown-content">
@@ -31,37 +38,55 @@
         <a href="#"> Om BKI</a>
     </div>
     </div>
-    </nav>
-</header>
+    </div>
+</nav>
 
-<main>
+<!-- Disse er placeret i header for at kunne lave flex columme i style. -->
 
-<div id="konkurrence-tepose">
-    <img src="img/konkurrence-tepose.png" alt="konkurrence-tepose">
+
+
+<!-- Burger Menu starter her -->
+<div id="burger">
+    <a href="index.html"><h1 id="mobil-logo">MEDOVA</h1></a>  
+    <a href="#"><i class="fa-solid fa-bars"></i></a>
 </div>
 <p id="forside-overskrift">Medova er genopfrisket</p>
 
 <div id="herobillede">
-    <!-- <img src="img/bauggrundforside.png" alt="medova te og kop"> -->
-    <i class="fa-regular fa-arrow-down"></i>
 </div>
+
+
+</header>
+
+
+
+<div id="konkurrence-tepose">
+    <img src="img/konkurrence-tepose.png" alt="konkurrence-tepose">
+</div>
+
+
+
+<main>
 
 <div id="forside-teposer">
 </div>
 
 
-
 <div id="main-forside-tekst">
-<p>
-    Medova te har fået nyt design, dog fastholder vi den gode og klassiske smag.   
-</p>
+    <p>
+        Medova te har fået nyt design, dog fastholder vi den gode og klassiske smag.   
+    </p>
 
-<p>
-    Oplev nye opskrifter, konkurrencer og kultureller arrangementer i forbindelse med Medova redesign kampagne 
-</p>
+    <p>
+        Oplev nye opskrifter, konkurrencer og kultureller arrangementer i forbindelse med Medova redesign kampagne 
+    </p>
 </div>
 
 </main>
+
+
+
+
 
 <!-- FOOTER---------------------------------------------------------------------------------------------------------------------------------->
 <footer>
@@ -98,7 +123,11 @@
 
         </div>
     </div>
-
 </footer>
+
+
+
+
+
 </body>
 </html>
