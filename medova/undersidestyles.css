@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200&display=swap');
 
+/*----------GENERELLE REGLER-------------------------------------------------------------------------------------------------------------------------*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,11 +16,24 @@ body{
     height: 100%;
 }
 
-html {
+/*  FJERNER HTML 100% SÅ MIN HEADER KAN VÆRE STICKY */
+/* html {
     height: 100%;
+} */
+
+main{
+    margin:3% 8% 3% 8% 
 }
 
-/* NAV I HEADER*/
+
+/*----------HEADER-------------------------------------------------------------------------------------------------------------------------*/
+
+header{ 
+    position: sticky;
+    z-index:1;
+    top: 0;
+    background-color: #fff2e5;
+}
 
 nav{
     display:flex; 
@@ -99,6 +114,154 @@ font-size:60pt;
 
 
 
+/* --MAIN PRODUKTSIDE--------------------------------------------------------------------------------------------------------------------------------- */
+
+/* !!!!!!!!PURE PROBLEMS!!!!!!!! */
+.produkt-beskrivelse{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width:100%;
+}
+
+.produkt-beskrivelse div{ 
+    width: 50%;
+}
+
+#produkt-tekst{ 
+    padding-left: 5%;
+}
+
+#produkt-tekst p{
+    padding:1% 0 1% 0;
+}
+
+#produkt-tekst h1{
+    font-size:30pt;
+    font-weight:400;
+}
+
+#produkt-billeder{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#produkt-billeder i{ 
+    font-size: 20pt;
+}
+
+
+/* -----Produktinformationer------ */
+.main-produktside h2{
+    font-size:30pt;
+    font-weight:400;
+    padding:2% 0% 2% 0%;
+}
+
+.produkt-information{
+    background-color:#FFB689;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*  næringstoffer */
+
+.næringsstoffer{
+    width:50%;
+    padding: 2%;
+    border-right: 1px solid #fff2e5;
+}
+
+#næringsstoffer-under-overskrift{
+    background-color: #002fb6;
+    color: #fff2e5;
+    padding: 1%;
+}
+
+#næringsinformation{ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted #FFB689;
+    background-color: #fff2e5;
+    padding: 1%;
+}
+
+
+/*  ingredienser */
+.ingredienser{ 
+    width: 50%;
+    padding: 2%;
+    border-left: 1px solid #fff2e5;
+}
+
+.ingredienser p{
+    padding: 1%;
+}
+
+#ingredienser-under-overskrift{ 
+    background-color: #fff2e5;
+}
+
+
+/* anmeldelser */
+.anmeldelser{ 
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.anmeldelser-card{
+    background-color: #FFB689;
+    width: 300px;
+    /* Ser flotterede ud med margin under flex wrap  */
+    margin: 2%;
+}
+#anmeldelser-container{ 
+padding: 3% 4% 3% 4%;
+
+}
+
+.anmeldelser i{ 
+    font-size: 20pt;
+}
+
+/* --MAIN OPSKRIFTER--------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.opskrifter{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+.opskrifter a{ 
+    text-decoration: none;
+    color: #002fb6;
+    margin: 2%;
+}
+
+.opskrifter-card{
+        background-color: #FFB689;
+        width: 250px;
+    }
+#opskrifter-container{ 
+    padding: 30px 0 30px 0px;
+    text-align: center;
+    }
+.main-opskrifter h1{ 
+    text-align: center;
+    font-size:30pt;
+    font-weight:400;
+    padding:2% 0% 2% 0%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer style */
@@ -112,6 +275,11 @@ footer{
 .footer-overskrift{
     text-decoration: underline;
 }
+/* #footer-omos{ 
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+} */
 .footer-content{
     display:flex; 
     justify-content: space-between;
@@ -142,20 +310,36 @@ footer a{
 
 @media screen and (max-width:1050px){
     /* viser burger menu */
+    main{ 
+        margin:3%;
+    }
     #burger {
        display: flex;
        justify-content: space-between;
        width: 100%;
        align-items: center;
    }
-   
+ 
+
    /* fjerner nav */
    nav{ 
        display:none;
    }
    
-
+   .anmeldelser{
+    flex-wrap: wrap;
+    justify-content: center;
+   }
    
+   .anmeldelser i{ 
+    display:none;
+   }
+
+   .opskrifter{ 
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
    }
    
    /* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
@@ -180,6 +364,20 @@ footer a{
    font-size: 20pt;
    }
    
+   .main-produktside h2{ 
+    font-size: 20pt;
+   }
+
+   .main-produktside p{ 
+    font-size:12pt;
+   }
+   .main-opskrifter h1{ 
+    font-size: 20pt;
+   }
+
+   .main-opskrifter p{ 
+    font-size:12pt;
+   }
    
    /* Footer ændres til colummn */
    
