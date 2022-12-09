@@ -42,3 +42,113 @@
 
 /*----------MAIN OM OS MEDOVA -------------------------------------------------------------------------------------------------------------------------*/
 
+.omos-medova-content{
+    background-color:white;
+    padding: 4%;
+    margin:3% 8% 3% 8%;
+
+}
+.omos-medova-content h1{ 
+    font-size:30pt;
+    font-weight:400;
+    text-align: center;
+}
+
+
+.omos-medova-content img {
+float: right;
+}
+
+.omos-medova-content p{ 
+line-height: 180%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+/*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
+.omos-bki-content{
+    background-color:white;
+    padding: 4%;
+    margin:3% 8% 3% 8%;
+
+}
+.omos-bki-content h1{ 
+    font-size:30pt;
+    font-weight:400;
+    text-align: center;
+}
+
+
+.omos-bki-content img {
+float: right;
+}
+
+.omos-bki-content p{ 
+line-height: 180%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+/* --BREAK POINT 1050 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1050px){
+    .omos-medova-content{ 
+        margin: 3%;
+    }
+
+}
+
+
+/* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
+   
+@media screen and (max-width:800px){
+    .omos-medova-content{ 
+    padding:6%;
+    }
+   
+   }
+   
+/* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+   
+ @media screen and (max-width:500px){
+/* om os medova */
+    .omos-medova-content{ 
+        padding:8%;
+        }
+
+    .omos-medova-content div{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .omos-medova-content div img{
+        width: 100%; 
+
+   }  
+   .omos-medova-content p{ 
+    font-size: 12;
+}
+    .omos-medova-content h1{ 
+    font-size: 20;
+}
+    #omos-underoverskrift{
+    padding: 4% 0% 4% 0%;
+    }
+
+/*  om os bki */
+    .omos-bki-content{ 
+        padding:8%;
+        }
+
+    .omos-bki-content div{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .omos-bki-content div img{
+        width: 100%; 
+    }  
+    .omos-bki-content section p{ 
+        font-size: 12;
+    }
+    .omos-bki-content h1{ 
+        font-size: 20;
+    }
+}
