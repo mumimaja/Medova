@@ -1,0 +1,44 @@
+/*----------MAIN KONKURRENCE-------------------------------------------------------------------------------------------------------------------------*/
+
+.main-konkurrence{ 
+    background-image:url("img/bauggrund-konkurrence.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    margin:0;
+    align-items: center;
+}
+
+.main-content{ 
+    margin:3% 8% 3% 8%;
+    text-align: center;
+}
+
+.main-content h1{ 
+    font-size:30pt;
+    font-weight:400;
+}
+
+
+.main-content p{
+    padding: 2%;
+    background-color: #FFF2E5;
+}
+.indtast-oplysninger p{ 
+    border: 2px solid #FFB689;
+    padding: 2%;
+    background-color: white;
+
+}
+.indtast-oplysninger{ 
+    border: 2px solid #FFB689;
+    text-align: left;
+}
+#beskriv-minde{ 
+    padding-bottom: 20%;
+}
+
+
+/*----------MAIN OM OS MEDOVA -------------------------------------------------------------------------------------------------------------------------*/
+
