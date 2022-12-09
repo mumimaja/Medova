@@ -346,7 +346,27 @@ padding: 3% 4% 3% 4%;
 }
 
 
+/* --BURGER MENU SIDE STYLES-------------------------------------------------------------------------------------------------------------------------------- */
 
+.main-burgermenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    }
+    
+    
+.main-burgermenu a{ 
+        text-decoration: none;
+        color: #002fb6;
+        font-size: 30pt;
+        background-color: #FFB689;
+        padding: 8%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
 
 
 
@@ -524,6 +544,10 @@ footer a{
     margin:2%;
    }
 
+   /* BURGERMENU 500PX */
+   .main-burgermenu a{ 
+    font-size: 20pt;
+   }
 
 
    /* Footer ændres til colummn */
