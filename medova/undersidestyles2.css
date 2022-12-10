@@ -81,6 +81,7 @@
 }
 
 /*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
+
 .main-omos-bki{ 
     background-image: url("img/omos-bauggrund.png");
     background-size: cover;
@@ -117,7 +118,11 @@
 @media screen and (max-width:1050px){
     .omos-medova-content{ 
         margin: 3%;
+   
     }
+
+    
+
 }
 
 
