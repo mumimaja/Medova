@@ -136,6 +136,10 @@ font-size:60pt;
     font-size: 15pt;
     padding: 20px;
 }
+
+.dropdown-content a:hover{
+border-bottom: 2px solid #FFB689;
+}
 .dropdown:hover .dropdown-content{
     display:block; 
     border: #002fb6 solid 2px ;

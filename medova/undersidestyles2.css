@@ -42,6 +42,16 @@
 
 /*----------MAIN OM OS MEDOVA -------------------------------------------------------------------------------------------------------------------------*/
 
+.main-omos-medova{ 
+    background-image: url("img/omos-bauggrund.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:0;
+
+}
+
+
 .omos-medova-content{
     background-color:white;
     padding: 4%;
@@ -65,6 +75,15 @@ padding-top: 1%;
 padding-bottom: 1%;
 }
 /*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
+.main-omos-bki{ 
+    background-image: url("img/omos-bauggrund.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:0;
+
+}
+
 .omos-bki-content{
     background-color:white;
     padding: 4%;

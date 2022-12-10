@@ -107,6 +107,10 @@ font-size:60pt;
     font-size: 15pt;
     padding: 20px;
 }
+.dropdown-content a:hover{
+    border-bottom: 2px solid #FFB689;
+    }
+
 .dropdown:hover .dropdown-content{
     display:block; 
     border: #002fb6 solid 2px ;
@@ -215,9 +219,10 @@ align-items: center;
     width: 300px;
     /* Ser flotterede ud med margin under flex wrap  */
     margin: 2%;
+    border-radius: 1%;
 }
-#anmeldelser-container{ 
-padding: 3% 4% 3% 4%;
+#anmeldelser-container p{ 
+padding:10px;
 
 }
 
@@ -452,7 +457,9 @@ footer a{
     display:none;
    }
 
-
+    #produkt-tekst{ 
+    padding-left: 0%;
+}
 
    /*  OPSKRIFTER 1050PX */
    .opskrifter{ 
