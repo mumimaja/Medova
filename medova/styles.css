@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200&display=swap');
-
-
-/* -----Generelle regler--------------------------------------------------------------------------------------------------------------------------- */
-
-
+/* -----Generelle regler --------------------------------------------------------------------------------------------------------------------------- */
 
 *{
     box-sizing: border-box;
@@ -19,8 +15,6 @@ body{
     background-color: #fff2e5;
     color: #002fb6;
     font-family: 'Prompt', sans-serif;
-    /* font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto Mono', monospace; */
     height: 100%;
 }
 
@@ -29,20 +23,15 @@ html {
 }
 
 
-
-
-
-
-
-
 /* -----HEADER--------------------------------------------------------------------------------------------------------------------------- */
-
 header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 95%;
 }
+
+/* Jeg bruger her højde i px, da ved bauggrundsbilleder, vil den ikke definere højden i %*/
 
 #herobillede{
     background-image: url(img/bauggrundforside.png);
@@ -74,14 +63,17 @@ nav a{
     padding: 5px 0px;
 }
 
+/* Fjerner at den "hopper" under hover med marginbottom */
+
 .header-link:hover{
     border-bottom: 2px solid #FFB689;
+    margin-bottom: -2px;
 }
 
 /* Logo */
 header h1{ 
-font-weight:900;
-font-size:60pt;
+    font-weight:900;
+    font-size:60pt;
 }
 
 
@@ -100,7 +92,6 @@ font-size:60pt;
 #burger i {
     font-size: 30pt;
     position: relative;
-    color: #002fb6;
 }
 #burger a{
     font-weight:900;
@@ -138,7 +129,7 @@ font-size:60pt;
 }
 
 .dropdown-content a:hover{
-border-bottom: 2px solid #FFB689;
+    border-bottom: 2px solid #FFB689;
 }
 .dropdown:hover .dropdown-content{
     display:block; 
@@ -158,9 +149,9 @@ border-bottom: 2px solid #FFB689;
 i højre side, derfor bruger jeg position. */
 
 #konkurrence-tepose{
-position: absolute;
-top: 110px;
-left: 68%;
+    position: absolute;
+    top: 110px;
+    left: 68%;
 }
 
 #konkurrence-tepose img{ 
@@ -210,7 +201,10 @@ footer{
     color: #002fb6;
     align-items: center;
 }
-
+#footer-omos a{ 
+    display: flex;
+    flex-direction: column;
+}
 footer a{
     text-decoration: none;
     color: #002fb6;
@@ -219,10 +213,8 @@ footer a{
 /* --BURGER MENU SIDE STYLES-------------------------------------------------------------------------------------------------------------------------------- */
 
 .main-burgermenu{
-display: flex;
-flex-direction: column;
-position: relative;
-top:0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -237,72 +229,83 @@ top:0;
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* --BREAK POINTS--------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
 /* --BREAK POINT 1050 PX-------------------------------------------------------------------------------------------------------------------------------- */
-
 @media screen and (max-width:1050px){
  /* viser burger menu */
- #burger {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
+    #burger {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
 
 /* fjerner nav */
-nav{ 
-    display:none;
-}
+    nav{ 
+        display:none;
+    }
 
 /* Te-pose placeres og skaleres korrekt ift. burgermenulinjen. */
-#konkurrence-tepose{
-    top:130px;
+    #konkurrence-tepose{
+        top:130px;
+    }
+
+    #konkurrence-tepose img{
+        height: 250px;
+        width:200px;
+    }
 }
 
-#konkurrence-tepose img{
-    height: 250px;
-    width:200px;
-}
 
-}
+
+
+
+
+
 
 /* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
-
-
 @media screen and (max-width:800px){
-#forside-overskrift {
+    #forside-overskrift {
         font-size: 30pt;
     }
     
-header{
+    header{
         height:75%;
     }
     
-#herobillede{
+    #herobillede{
         height: 200px;
     }
 
 
 /* Da skærmen bliver mindre, ændre vi højden */
-main{
-    height: 50%;
-}
+    main{
+        height: 50%;
+    }
 
-#main-forside-tekst{
-    font-size: 15pt;
-
-}
+    #main-forside-tekst{
+        font-size: 15pt;
+    }
 
 
 /* Herefter gav det ikke mening at have te posen */
 
-#konkurrence-tepose{
-    display:none;
-}
-
+    #konkurrence-tepose{
+        display:none;
+    }
 }
 
 
@@ -313,37 +316,40 @@ main{
 /* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width:500px){
-#burger a h1{ 
-font-size: 30pt;
-}
-#burger i{ 
-font-size: 20pt;
-}
-#forside-overskrift {
-    font-size: 18pt;
-    padding-top: 0%;
-}
-#main-forside-tekst{
-    font-size: 10pt;
+    #burger a h1{ 
+        font-size: 30pt;
+    }
 
-}
+    #burger i{ 
+        font-size: 20pt;
+    }
+
+    #forside-overskrift {
+        font-size: 18pt;
+        padding-top: 0%;
+    }
+
+    #main-forside-tekst{
+        font-size: 10pt;
+    }
+
 /* Footer ændres til colummn */
 
-footer{ 
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap:10px;
-    font-size: 8pt;
-}
+    footer{ 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap:10px;
+        font-size: 8pt;
+    }
 
-.footer-content{
-justify-content: center;
-}
+    .footer-content{
+        justify-content: center;
+    }
 
-#herobillede{
-    height: 150px;
-}
+    #herobillede{
+        height: 150px;
+    }
 }
 
 

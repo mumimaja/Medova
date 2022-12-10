@@ -7,42 +7,40 @@
     padding:0;
 }
 
-body{ 
+body{
     background-color: #fff2e5;
     color: #002fb6;
     font-family: 'Prompt', sans-serif;
-    /* font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto Mono', monospace; */
     height: 100%;
 }
 
-/*  FJERNER HTML 100% SÅ MIN HEADER KAN VÆRE STICKY */
-/* html {
-    height: 100%;
-} */
+/*  FJERNER HTML 100% SÅ MIN HEADER KAN VÆRE STICKY PÅ HELE SIDEN*/
 
 main{
-    margin:3% 8% 3% 8% 
+    margin:3% 8% 3% 8%
 }
 
 
 /*----------HEADER-------------------------------------------------------------------------------------------------------------------------*/
 
-header{ 
+/* header er kun sticky på undersiderne, da de er længere */
+header{
     position: sticky;
     z-index:1;
     top: 0;
     background-color: #fff2e5;
 }
 
+/* samme */
+
 nav{
-    display:flex; 
+    display:flex;
     justify-content: space-around;
     border-bottom:2px solid #002fb6;
     align-items: center;
 }
 
-nav a{ 
+nav a{
     text-decoration: none;
     color: #002fb6;
     font-size: 17pt;
@@ -51,16 +49,17 @@ nav a{
 
 .header-link:hover{
     border-bottom: 2px solid #FFB689;
+    margin-bottom: -2px ;
 }
 
 /* Logo */
-header h1{ 
-font-weight:900;
-font-size:60pt;
+header h1{
+    font-weight:900;
+    font-size:60pt;
 }
 
 /* ------BURGER STYLING -------Fjerner burger menu ---------------------------------------------------------------------------*/
-#burger{ 
+#burger{
     display: none;
     padding: 10px;
     align-items: center;
@@ -83,12 +82,12 @@ font-size:60pt;
 
 
 /* --------DROPDOWN KNAP -------------------------------------------------------------------------------------------------------------------*/
-.dropdownbtn{ 
+.dropdownbtn{
     border:none;
     font-size: 17pt;
 }
 
-.dropdown{ 
+.dropdown{
     position: relative;
     display: inline-block;
 }
@@ -112,26 +111,27 @@ font-size:60pt;
     }
 
 .dropdown:hover .dropdown-content{
-    display:block; 
+    display:block;
     border: #002fb6 solid 2px ;
 }
 
 
 
 /* --MAIN PRODUKTSIDE--------------------------------------------------------------------------------------------------------------------------------- */
-
-/* !!!!!!!!PURE PROBLEMS!!!!!!!! */
-.produkt-beskrivelse{ 
+/* Produkt-beskrivelse */
+.produkt-beskrivelse{
     display: flex;
     justify-content: space-between;
     width:100%;
 }
 
-.produkt-beskrivelse div{ 
+.produkt-beskrivelse div{
     width: 50%;
 }
 
-#produkt-tekst{ 
+/* Produkt tekst */
+
+#produkt-tekst{
     padding-left: 5%;
 }
 
@@ -144,19 +144,20 @@ font-size:60pt;
     font-weight:400;
 }
 
-#produkt-billeder{ 
+/* Produktbilleder */
+#produkt-billeder{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#produkt-billeder i{ 
+#produkt-billeder i{
     font-size: 20pt;
 }
-#produkt-billeder img{ 
+#produkt-billeder img{
     width: 100%;
 }
 
-/* -----Produktinformationer------ */
+/*Produktinformationer */
 .main-produktside h2{
     font-size:30pt;
     font-weight:400;
@@ -183,7 +184,7 @@ font-size:60pt;
     padding: 1%;
 }
 
-#næringsinformation{ 
+#næringsinformation{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px dotted #FFB689;
@@ -193,7 +194,7 @@ font-size:60pt;
 
 
 /*  ingredienser */
-.ingredienser{ 
+.ingredienser{
     width: 50%;
     padding: 2%;
     border-left: 1px solid #fff2e5;
@@ -203,13 +204,13 @@ font-size:60pt;
     padding: 1%;
 }
 
-#ingredienser-under-overskrift{ 
+#ingredienser-under-overskrift{
     background-color: #fff2e5;
 }
 
 
 /* anmeldelser */
-.anmeldelser{ 
+.anmeldelser{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -221,25 +222,25 @@ align-items: center;
     margin: 2%;
     border-radius: 1%;
 }
-#anmeldelser-container p{ 
+#anmeldelser-container p{
 padding:10px;
 
 }
-
-.anmeldelser i{ 
+.anmeldelser i{
     font-size: 20pt;
 }
+
 
 /* --MAIN OPSKRIFTER--------------------------------------------------------------------------------------------------------------------------------- */
 
 
-.opskrifter{ 
+.opskrifter{
     display: flex;
     justify-content: space-around;
     margin: 2%;
 }
 
-.opskrifter a{ 
+.opskrifter a{
     text-decoration: none;
     color: #002fb6;
     margin: 2%;
@@ -249,11 +250,11 @@ padding:10px;
         background-color: #FFB689;
         width: 250px;
     }
-#opskrifter-container{ 
+#opskrifter-container{
     padding: 30px 0 30px 0px;
     text-align: center;
     }
-.main-opskrifter h1{ 
+.main-opskrifter h1{
     text-align: center;
     font-size:30pt;
     font-weight:400;
@@ -262,18 +263,18 @@ padding:10px;
 
 
 /* --MAIN ARRANGEMENTER--------------------------------------------------------------------------------------------------------------------------------- */
-.arrangementer-intro{ 
+.arrangementer-intro{
     text-align: center;
     padding:2% 5% 2% 5%;
 }
 
-.arrangementer-intro h1{ 
+.arrangementer-intro h1{
     font-size:30pt;
     font-weight:400;
     padding-bottom: 2%;
 }
 
-.alle-arrangementer .arrangementer-lokal{ 
+.alle-arrangementer .arrangementer-lokal{
    margin: 8% 0% 8% 0;
 }
 #arrangementer-underoverskrift {
@@ -281,26 +282,26 @@ padding:10px;
     font-weight:bold;
 }
 
-.arrangementer-lokal div{ 
+.arrangementer-lokal div{
     border-bottom: 2px dotted #002fb6;
     display: flex;
     justify-content: space-between;
 }
 
-.alle-arrangementer p{ 
+.alle-arrangementer p{
     padding: 2px;
 }
 
 
 /*----------HONNING CITRON TE-------------------------------------------------------------------------------------------------------------------------*/
-.main-honningte h1{ 
+.main-honningte h1{
     font-size:30pt;
     font-weight:400;
     padding-bottom: 2%;
     text-align: center;
 }
-
-.honningte-content{ 
+/* Alt content */
+.honningte-content{
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -308,14 +309,25 @@ padding:10px;
     padding: 2%;
 }
 
+/* højre side */
 .honningte-indhold{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-right: 1%;
 }
+.honningte-indhold img{
+    margin-bottom: 2%;
+    width: 100%;
+}
 
+#næringsstoffer-underoverskrift-opskrift{
+    background-color: #002fb6;
+    color: #fff2e5;
+    padding: 1%;
+}
 
+/* venstre side */
 .honningte-opskrift{
     display: flex;
     flex-direction: column;
@@ -332,23 +344,14 @@ padding:10px;
     padding: 2%;
 }
 
-#tilberedelse{ 
+#tilberedelse{
     height: 75%;
 }
-.honningte-indhold img{
-    margin-bottom: 2%;
-    width: 100%;
-}
-#opskrift-ingredienser{ 
+
+#opskrift-ingredienser{
     margin-bottom: 2%;
 }
 
-/*  næringstoffer */
-#næringsstoffer-underoverskrift-opskrift{
-    background-color: #002fb6;
-    color: #fff2e5;
-    padding: 1%;
-}
 
 
 /* --BURGER MENU SIDE STYLES-------------------------------------------------------------------------------------------------------------------------------- */
@@ -359,9 +362,9 @@ padding:10px;
     justify-content: space-between;
     margin: 0;
     }
-    
-    
-.main-burgermenu a{ 
+
+
+.main-burgermenu a{
         text-decoration: none;
         color: #002fb6;
         font-size: 30pt;
@@ -371,15 +374,10 @@ padding:10px;
         align-items: center;
         text-align: center;
     }
-    
 
+/* --FOOTER STYLES-------------------------------------------------------------------------------------------------------------------------------- */
 
-
-
-
-
-/* Footer style */
-footer{ 
+footer{
     border-top: 2px solid #002fb6;
     display: flex;
     justify-content: space-around;
@@ -389,13 +387,14 @@ footer{
 .footer-overskrift{
     text-decoration: underline;
 }
-/* #footer-omos{ 
+
+#footer-omos a{
     display: flex;
-    flex-direction: row;
-    background-color: aqua;
-} */
+    flex-direction: column;
+}
+
 .footer-content{
-    display:flex; 
+    display:flex;
     justify-content: space-between;
     text-decoration: none;
     color: #002fb6;
@@ -418,13 +417,11 @@ footer a{
 
 /* --BREAK POINTS--------------------------------------------------------------------------------------------------------------------------------- */
 
-
-
 /* --BREAK POINT 1050 PX-------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width:1050px){
-    /* viser burger menu */
-    main{ 
+/*--- MAIN OG HEADER 1050PX------------------------------------------------------------------------------------------------------------ --------------------*/
+    main{
         margin:3%;
     }
     #burger {
@@ -433,144 +430,179 @@ footer a{
        width: 100%;
        align-items: center;
    }
- 
-
-   /* fjerner nav */
-   nav{ 
+   nav{
        display:none;
    }
 
-   /* PRODUKTSIDE 1050px */
-   .produkt-beskrivelse{ 
-    flex-direction: column;
+/*--- PRODUKTSIDE 1050px----------------------------------------------------------------------------------------------------------------------------- */
+   .produkt-beskrivelse{
+        flex-direction: column;
    }
-   .produkt-beskrivelse div{ 
-    width: 100%;
-    align-items: center;
+   .produkt-beskrivelse div{
+         width: 100%;
+         align-items: center;
    }
    .anmeldelser{
-    flex-wrap: wrap;
-    justify-content: center;
-   }
-   
-   .anmeldelser i{ 
-    display:none;
+        flex-wrap: wrap;
+        justify-content: center;
    }
 
-    #produkt-tekst{ 
-    padding-left: 0%;
-}
-
-   /*  OPSKRIFTER 1050PX */
-   .opskrifter{ 
-    flex-wrap: wrap;
-    justify-content: center;
+   .anmeldelser i{
+        display:none;
    }
 
-   /* HONNING TE 1050 PX */
-   .honningte-content{ 
-    flex-wrap: wrap;
-    align-items: center;
+    #produkt-tekst{
+        padding-left: 0%;
+    }
+
+/*--- OPSKRIFTER 1050px----------------------------------------------------------------------------------------------------------------------------- */
+.opskrifter{
+        flex-wrap: wrap;
+        justify-content: center;
    }
-   .honningte-indhold{ 
-    width: 100%;
-    margin-right: 0;
+
+/*--- HONNING TE 1050px----------------------------------------------------------------------------------------------------------------------------- */
+
+   .honningte-content{
+        flex-wrap: wrap;
+        align-items: center;
    }
-   .honningte-opskrift{ 
-    width: 100%;
-    margin-left: 0;
+   .honningte-indhold{
+        width: 100%;
+        margin-right: 0;
+   }
+   .honningte-opskrift{
+        width: 100%;
+        margin-left: 0;
    }
    .næringsstoffer-opskrift{
-   margin-bottom: 2%;}
+        margin-bottom: 2%;
+    }
 
    .honningte-indhold img{
-    width: 100%;
+        width: 100%;
    }
 
 }
-   /* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
-   
-   
-   @media screen and (max-width:800px){
 
-   
-   }
-   
-   
-   
 
-   
-   
-   /* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
-   
-   @media screen and (max-width:500px){
-   #burger a h1{ 
+
+
+
+
+/* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:800px){
+/*--- PRODUKTSIDE 800px----------------------------------------------------------------------------------------------------------------------------- */
+#produkt-billeder{
+        width: 90%;
+        margin: auto;
+    }
+
+    #produkt-billeder img{
+    width: 75%;
+    }
+
+    .main-produktside h2{
+        padding:4% 0% 4% 0%;
+    }
+
+    #produkt-tekst h1{
+        padding: 4% 0% 4% 0%;
+    }
+}
+
+
+
+
+
+/* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:500px){
+
+   #burger a h1{
    font-size: 30pt;
    }
-   #burger i{ 
+   #burger i{
    font-size: 20pt;
    }
-   
-   /* PRODUKTSIDE 500PX */
-   .main-produktside h2{ 
-    font-size: 20pt;
-   }
-
-   .main-produktside p{ 
-    font-size:12pt;
-   }
-
-   /* PRODUKTSIDE 500PX */
-   .main-opskrifter h1{ 
-    font-size: 20pt;
-   }
-
-   .main-opskrifter p{ 
-    font-size:12pt;
-   }
-   
-   /* ARRANGEMENTER 500PX */
-   .main-arrangementer h1{ 
-    font-size: 20pt;
-   }
-
-   .main-arrangementer p{ 
-    font-size:12pt;
-   }
-
-   /* HONNING TE 500PX */
-   .main-honningte h1{ 
-    font-size: 20pt;
-   }
-
-   .main-honningte p{ 
-    font-size:12pt;
-   }
-
-   #tilberedelse p{ 
-    margin:2%;
-   }
-
-   /* BURGERMENU 500PX */
-   .main-burgermenu a{ 
-    font-size: 20pt;
-   }
 
 
-   /* Footer ændres til colummn */
-   
-   footer{ 
+/*--- PRODUKTSIDE 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+   .main-produktside h2{
+        font-size: 20pt;
+   }
+
+   .main-produktside p{
+        font-size:12pt;
+   }
+
+   #produkt-billeder{
+        width: 80%;
+        margin: auto;
+    }
+
+    #produkt-billeder i{
+        font-size: 12pt;
+    }
+
+    #produkt-billeder img{
+        width: 75%;
+    }
+
+/*--- OPSKRIFTER 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+    .main-opskrifter h1{
+        font-size: 20pt;
+   }
+
+   .main-opskrifter p{
+        font-size:12pt;
+   }
+
+/*--- ARRANGEMENTER 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+   .main-arrangementer h1{
+        font-size: 20pt;
+   }
+
+   .main-arrangementer p{
+        font-size:12pt;
+   }
+
+/*--- HONNING TE 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+   .main-honningte h1{
+        font-size: 20pt;
+   }
+
+   .main-honningte p{
+        font-size:12pt;
+   }
+
+   #tilberedelse p{
+        margin:2%;
+   }
+
+/*--- BURGER MENU 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+   .main-burgermenu a{
+        font-size: 20pt;
+   }
+
+/*--- FOOTER 500px----------------------------------------------------------------------------------------------------------------------------- */
+
+   footer{
        flex-direction: column;
        justify-content: center;
        text-align: center;
        gap:10px;
        font-size: 8pt;
    }
-   
+
    .footer-content{
-   justify-content: center;
-   }  
+        justify-content: center;
+   }
 }
-   
-   
-   
+
+/*--- STYLESHEET SLUT----------------------------------------------------------------------------------------------------------------------------- */
+

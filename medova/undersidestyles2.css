@@ -1,5 +1,6 @@
+/* Ekstra stylsheet til begge OM OS SIDER og Konkurrence // (alle undersider med en bauggrund) */
 /*----------MAIN KONKURRENCE-------------------------------------------------------------------------------------------------------------------------*/
-
+/* Bauggrundsbillede */
 .main-konkurrence{ 
     background-image:url("img/bauggrund-konkurrence.png");
     background-size: cover;
@@ -10,21 +11,25 @@
     align-items: center;
 }
 
-.main-content{ 
+/* Alt indholdet i main */
+.main-content-konkurrence{ 
     margin:3% 8% 3% 8%;
     text-align: center;
+    background-color: #FFF2E5;
+
 }
 
-.main-content h1{ 
+.main-content-konkurrence h1{ 
     font-size:30pt;
     font-weight:400;
 }
 
 
-.main-content p{
+.main-content-konkurrence p{
     padding: 2%;
     background-color: #FFF2E5;
 }
+
 .indtast-oplysninger p{ 
     border: 2px solid #FFB689;
     padding: 2%;
@@ -64,16 +69,17 @@
     text-align: center;
 }
 
-
+/* Bruger float nu, men senere i media 500px ændres det til display flex columme */
 .omos-medova-content img {
-float: right;
+    float: right;
 }
 
 .omos-medova-content p{ 
-line-height: 180%;
-padding-top: 1%;
-padding-bottom: 1%;
+    line-height: 180%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
 /*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
 .main-omos-bki{ 
     background-image: url("img/omos-bauggrund.png");
@@ -96,15 +102,14 @@ padding-bottom: 1%;
     text-align: center;
 }
 
-
 .omos-bki-content img {
-float: right;
+    float: right;
 }
 
 .omos-bki-content p{ 
-line-height: 180%;
-padding-top: 1%;
-padding-bottom: 1%;
+    line-height: 180%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /* --BREAK POINT 1050 PX--------------------------------------------------------------------------------------------------------------------------------- */
@@ -113,7 +118,6 @@ padding-bottom: 1%;
     .omos-medova-content{ 
         margin: 3%;
     }
-
 }
 
 
@@ -121,52 +125,70 @@ padding-bottom: 1%;
    
 @media screen and (max-width:800px){
     .omos-medova-content{ 
-    padding:6%;
+         padding:6%;
     }
-   
+
+    .omos-bki-content{ 
+        padding:6%;
    }
+}
    
 /* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
-   
+/* --KONKURRENCE 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
  @media screen and (max-width:500px){
-/* om os medova */
+    .main-content-konkurrence h1{ 
+        font-size:20pt;
+    }
+    .main-content-konkurrence p{ 
+        font-size: 12pt;
+    }
+/* --OM OS MEDOVA 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+    
     .omos-medova-content{ 
         padding:8%;
-        }
+    }
 
     .omos-medova-content div{ 
         display: flex;
         flex-direction: column;
     }
+
     .omos-medova-content div img{
         width: 100%; 
+    }  
 
-   }  
    .omos-medova-content p{ 
     font-size: 12;
-}
+    }
+
     .omos-medova-content h1{ 
     font-size: 20;
-}
+    }
+
     #omos-underoverskrift{
     padding: 4% 0% 4% 0%;
     }
 
-/*  om os bki */
+/* -- OMG OS BKI 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+    
     .omos-bki-content{ 
         padding:8%;
-        }
+    }
 
     .omos-bki-content div{ 
         display: flex;
         flex-direction: column;
     }
+
     .omos-bki-content div img{
         width: 100%; 
     }  
+
     .omos-bki-content section p{ 
         font-size: 12;
     }
+
     .omos-bki-content h1{ 
         font-size: 20;
     }
