@@ -150,7 +150,7 @@ header h1{
     justify-content: space-between;
     align-items: center;
 }
-#produkt-billeder i{
+#produkt-billeder .material-symbols-outlined{
     font-size: 20pt;
 }
 #produkt-billeder img{
@@ -178,13 +178,13 @@ header h1{
     border-right: 1px solid #fff2e5;
 }
 
-#næringsstoffer-under-overskrift{
+.næringsstoffer-under-overskrift{
     background-color: #002fb6;
     color: #fff2e5;
     padding: 1%;
 }
 
-#næringsinformation{
+.næringsinformation{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px dotted #FFB689;
@@ -204,17 +204,18 @@ header h1{
     padding: 1%;
 }
 
-#ingredienser-under-overskrift{
+.ingredienser-under-overskrift{
     background-color: #fff2e5;
 }
 
 
 /* anmeldelser */
 .anmeldelser{
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .anmeldelser-card{
     background-color: #FFB689;
     width: 300px;
@@ -222,8 +223,8 @@ align-items: center;
     margin: 2%;
     border-radius: 2%;
 }
-#anmeldelser-container p{
-padding:10px;
+.anmeldelser-container p{
+    padding:10px;
 
 }
 .anmeldelser i{
@@ -252,7 +253,7 @@ padding:10px;
         width: 250px;
         border-radius: 2%;
     }
-#opskrifter-container{
+.opskrifter-container{
     padding: 30px 0 30px 0px;
     text-align: center;
     }
@@ -279,7 +280,7 @@ padding:10px;
 .alle-arrangementer .arrangementer-lokal{
    margin: 8% 0% 8% 0;
 }
-#arrangementer-underoverskrift {
+.arrangementer-underoverskrift {
     border-bottom: 2px solid #002fb6;
     font-weight:bold;
 }
@@ -367,14 +368,14 @@ padding:10px;
 
 
 .main-burgermenu a{
-        text-decoration: none;
-        color: #002fb6;
-        font-size: 30pt;
-        background-color: #FFB689;
-        padding: 8%;
-        width: 100%;
-        align-items: center;
-        text-align: center;
+    text-decoration: none;
+    color: #002fb6;
+    font-size: 30pt;
+    background-color: #FFB689;
+    padding: 8%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
     }
 
 /* --FOOTER STYLES-------------------------------------------------------------------------------------------------------------------------------- */
@@ -449,7 +450,7 @@ footer a{
         justify-content: center;
    }
 
-   .anmeldelser i{
+   .anmeldelser .material-symbols-outlined{
         display:none;
    }
 
@@ -543,7 +544,7 @@ footer a{
         margin: auto;
     }
 
-    #produkt-billeder i{
+    #produkt-billeder .material-symbols-outlined{
         font-size: 12pt;
     }
 

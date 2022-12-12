@@ -244,7 +244,7 @@ footer a{
 
 
 /* --BREAK POINT 1050 PX-------------------------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:1050px){
+@media screen and (max-width: 1050px) {
  /* viser burger menu */
     #burger {
         display: flex;
@@ -267,6 +267,10 @@ footer a{
         height: 250px;
         width:200px;
     }
+
+    #herobillede{
+        height: 300px;
+    }
 }
 
 
@@ -277,8 +281,8 @@ footer a{
 
 
 /* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:800px){
-    #forside-overskrift {
+@media screen and (max-width: 800px){
+ #forside-overskrift {
         font-size: 30pt;
     }
     
@@ -332,7 +336,13 @@ footer a{
     #main-forside-tekst{
         font-size: 10pt;
     }
+    header{
+        height:50%;
+    }
 
+    #konkurrence-tepose{
+        display:none;
+    }
 /* Footer ændres til colummn */
 
     footer{ 

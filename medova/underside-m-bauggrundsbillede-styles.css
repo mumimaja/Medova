@@ -1,0 +1,203 @@
+/* Ekstra stylsheet til begge OM OS SIDER og Konkurrence // (alle undersider med en bauggrund) */
+/*----------MAIN KONKURRENCE-------------------------------------------------------------------------------------------------------------------------*/
+/* Bauggrundsbillede */
+.main-konkurrence{ 
+    background-image:url("img/bauggrund-underside.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    margin:0;
+    align-items: center;
+}
+
+/* Alt indholdet i main */
+.main-content-konkurrence{ 
+    margin:3% 8% 3% 8%;
+    text-align: center;
+    background-color: #FFF2E5;
+
+}
+
+.main-content-konkurrence h1{ 
+    font-size:30pt;
+    font-weight:400;
+}
+
+
+.main-content-konkurrence p{
+    padding: 2%;
+    background-color: #FFF2E5;
+}
+
+.indtast-oplysninger p{ 
+    border: 2px solid #FFB689;
+    padding: 2%;
+    background-color: white;
+
+}
+.indtast-oplysninger{ 
+    border: 2px solid #FFB689;
+    text-align: left;
+}
+#beskriv-minde{ 
+    padding-bottom: 20%;
+}
+
+
+/*----------MAIN OM OS MEDOVA -------------------------------------------------------------------------------------------------------------------------*/
+
+.main-omos-medova{ 
+    background-image: url("img/bauggrund-underside.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:0;
+
+}
+
+
+.omos-medova-content{
+    background-color:white;
+    padding: 4%;
+    margin:3% 8% 3% 8%;
+
+}
+.omos-medova-content h1{ 
+    font-size:30pt;
+    font-weight:400;
+    text-align: center;
+}
+
+/* Bruger float nu, men senere i media 500px ændres det til display flex columme */
+.omos-medova-content img {
+    float: right;
+}
+
+.omos-medova-content p{ 
+    line-height: 180%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
+
+.main-omos-bki{ 
+    background-image: url("img/bauggrund-underside.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:0;
+
+}
+
+.omos-bki-content{
+    background-color:white;
+    padding: 4%;
+    margin:3% 8% 3% 8%;
+
+}
+.omos-bki-content h1{ 
+    font-size:30pt;
+    font-weight:400;
+    text-align: center;
+}
+
+.omos-bki-content img {
+    float: right;
+}
+
+.omos-bki-content p{ 
+    line-height: 180%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* --BREAK POINT 1050 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1050px){
+    .omos-medova-content{ 
+        margin: 3%;
+   
+    }
+
+.main-konkurrence{ 
+height: 700px;
+}
+}
+
+/* --BREAK POINT 800 PX--------------------------------------------------------------------------------------------------------------------------------- */
+   
+@media screen and (max-width:800px){
+    .omos-medova-content{ 
+         padding:6%;
+    }
+
+    .omos-bki-content{ 
+        padding:6%;
+   }
+}
+   
+/* --BREAK POINT 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+/* --KONKURRENCE 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+
+ @media screen and (max-width:500px){
+    .main-content-konkurrence h1{ 
+        font-size:20pt;
+    }
+    .main-content-konkurrence p{ 
+        font-size: 12pt;
+    }
+    .main-konkurrence{ 
+        height: 600px;
+        }
+/* --OM OS MEDOVA 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+    
+    .omos-medova-content{ 
+        padding:8%;
+    }
+
+    .omos-medova-content div{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .omos-medova-content div img{
+        width: 100%; 
+    }  
+
+   .omos-medova-content p{ 
+    font-size:12pt;
+    }
+
+    .omos-medova-content h1{ 
+    font-size: 20pt;
+    }
+/* Gælder både for bki og medova */
+    .omos-underoverskrift{
+    padding: 4% 0% 4% 0%;
+    }
+
+/* -- OMG OS BKI 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
+    
+    .omos-bki-content{ 
+        padding:8%;
+    }
+
+    .omos-bki-content div{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .omos-bki-content div img{
+        width: 100%; 
+    }  
+
+    .omos-bki-content section p{ 
+        font-size: 12pt;
+    }
+
+    .omos-bki-content h1{ 
+        font-size: 20pt;
+    }
+}
