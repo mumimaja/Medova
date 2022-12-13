@@ -277,9 +277,9 @@ header h1{
     padding-bottom: 2%;
 }
 
-.alle-arrangementer .arrangementer-lokal{
+/* .alle-arrangementer .arrangementer-lokal{
    margin: 8% 0% 8% 0;
-}
+} */
 .arrangementer-underoverskrift {
     border-bottom: 2px solid #002fb6;
     font-weight:bold;
@@ -295,6 +295,10 @@ header h1{
     padding: 2px;
 }
 
+.alle-arrangementer{ 
+padding: 2%;
+background-color: white;
+}
 
 /*----------HONNING CITRON TE-------------------------------------------------------------------------------------------------------------------------*/
 .main-honningte h1{
@@ -388,7 +392,7 @@ footer{
     padding-bottom: 2%;
 }
 .footer-overskrift{
-    text-decoration: underline;
+    font-weight: bolder;
 }
 
 #footer-omos a{

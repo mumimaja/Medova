@@ -192,7 +192,7 @@ footer{
     padding-bottom: 2%;
 }
 .footer-overskrift{
-    text-decoration: underline;
+    font-weight: bolder;
 }
 .footer-content{
     display:flex; 
@@ -271,6 +271,7 @@ footer a{
     #herobillede{
         height: 300px;
     }
+
 }
 
 
@@ -296,13 +297,14 @@ footer a{
 
 
 /* Da skærmen bliver mindre, ændre vi højden */
-    main{
-        height: 50%;
-    }
-
+   
+main{ 
+    height: 80%;
+}
     #main-forside-tekst{
-        font-size: 15pt;
-    }
+        font-size: 20pt;
+        text-align: center;
+            }
 
 
 /* Herefter gav det ikke mening at have te posen */
@@ -329,16 +331,19 @@ footer a{
     }
 
     #forside-overskrift {
-        font-size: 18pt;
+        font-size: 15pt;
         padding-top: 0%;
     }
 
     #main-forside-tekst{
-        font-size: 10pt;
+        font-size: 15pt;
     }
     header{
         height:50%;
     }
+    
+    main{ 
+        height: 60%;}
 
     #konkurrence-tepose{
         display:none;

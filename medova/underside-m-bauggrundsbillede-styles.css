@@ -15,7 +15,8 @@
 .main-content-konkurrence{ 
     margin:3% 8% 3% 8%;
     text-align: center;
-    background-color: #FFF2E5;
+    padding: 2%;
+    background-color: #ffffff;
 
 }
 
@@ -27,7 +28,6 @@
 
 .main-content-konkurrence p{
     padding: 2%;
-    background-color: #FFF2E5;
 }
 
 .indtast-oplysninger p{ 
@@ -80,6 +80,12 @@
     padding-bottom: 1%;
 }
 
+
+
+.omos-underoverskrift{ 
+    padding-bottom: 2%;
+    font-size: 16pt;
+}
 /*----------MAIN OM OS BKI -------------------------------------------------------------------------------------------------------------------------*/
 
 .main-omos-bki{ 
@@ -176,6 +182,7 @@ height: 700px;
 /* Gælder både for bki og medova */
     .omos-underoverskrift{
     padding: 4% 0% 4% 0%;
+    font-size: 14pt;
     }
 
 /* -- OMG OS BKI 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
