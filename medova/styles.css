@@ -65,7 +65,7 @@ nav a{
 
 /* Fjerner at den "hopper" under hover med marginbottom */
 
-.header-link:hover{
+.nav-link:hover{
     border-bottom: 2px solid #FFB689;
     margin-bottom: -2px;
 }
@@ -87,6 +87,9 @@ header h1{
     align-items: center;
     border-bottom: 2px solid #002fb6;
     padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 #burger i {
@@ -248,9 +251,6 @@ footer a{
  /* viser burger menu */
     #burger {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
     }
 
 /* fjerner nav */

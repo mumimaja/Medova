@@ -47,7 +47,7 @@ nav a{
     padding: 5px 0px;
 }
 
-.header-link:hover{
+.nav-link:hover{
     border-bottom: 2px solid #FFB689;
     margin-bottom: -2px ;
 }
