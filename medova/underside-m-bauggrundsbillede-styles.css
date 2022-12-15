@@ -155,12 +155,15 @@ height: 700px;
         font-size: 12pt;
     }
     .main-konkurrence{ 
-        height: 600px;
+        height: 95%;
         }
+    .main-content-konkurrence{ 
+        margin-bottom: 20px;        
+    }
 /* --OM OS MEDOVA 500 PX--------------------------------------------------------------------------------------------------------------------------------- */
     
     .omos-medova-content{ 
-        padding:8%;
+        margin-bottom: 5%;
     }
 
     .omos-medova-content div{ 
@@ -194,10 +197,13 @@ height: 700px;
     .omos-bki-content div{ 
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .omos-bki-content div img{
-        width: 100%; 
+        width: 50%; 
+        height: 250px;
+
     }  
 
     .omos-bki-content section p{ 
